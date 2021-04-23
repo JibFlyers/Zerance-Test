@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-Regular.ttf');
+}
+
+/* ------ Body ---- */
+
+body{
+    background-color: #ffffff;
+    font-family: 'Darker Grotesque', sans-serif;
+} 
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Home page -------------- */
+
+.navbar{
+    padding:0px ;
+    color: #000000;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: black;
+}
+
+li {
+    font-family: Futura;
+    list-style-type: none;
+}
+
+.navbar:link{
+    text-decoration:none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo_1{
+    position: absolute;
+    width: 60px;
+    top: 10px;
+    left: 30px;
+}
+
+.logo{
+    width: 100px;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.banner {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: Futura;
+}
+
+.soulignement {
+    background-image: url(/images/soulignement.png);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position:bottom;
+}
+
+
+
+#text-portfolio {
+    font-family: Karla;
+    font-size: 1.3em;
+    color: white;
+    margin-top: 100px;
+}
+
+
+
+@media (min-width: 50px) {
+
+    .client-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .client {
+        width: 150px;
+        margin: 20px;
+    }
+    .portfolio-container {
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .client-container {
+        width: 900px;
+        height: 400px;
+        text-align: center;
+        vertical-align: center;
+    }
+    .client {
+        width: 120px;
+        margin: 20px;
+    }
+    .portfolio-container {
+        background-color: black;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.swiper-container {
+    width: 100vw;
+}
+
+.swiper-wrapper{
+    width: 100vw;
+}
+
+.swiper-slide {
+    width: 100vw;
+}
+
+.artboard-1 {
+    width: 100vw;
+}
+
+.artboard-2 {
+    width: 100vw;
+}
+
+@media (min-width: 50px) {
+.artboard-1-text{
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    bottom: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 70vw;
+    min-height: 22vh;
+}
+#seasonly {
+    width: 30%;
+}
+
+#voir-plus {
+    font-family: futura;
+    font-size: 1em;
+    height: 20%;
+}
+}
+
+@media (min-width: 650px) {
+    .artboard-1-text{
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        bottom: 20%;
+        padding: 20px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        min-width: 310px;
+        min-height: 250px;
+    }
+    #seasonly {
+        width: 50%;
+    }
+
+    #voir-plus {
+        font-family: futura;
+        font-size: 1.2em;
+        height: 20%;
+    }
+
+    }
+
+.soulignement-2 {
+    background-image: url(/images/soulignement.png);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position:bottom;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+#maindiv{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #ffcd1a;
+}
+  
+#div1 {
+    font-size: 1.5em;
+    color: white;
+    line-height: 5rem;
+    width: 100vw;
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+  
+#div2 {
+    font-size: 1.5em;
+    color: white;
+    line-height: 5rem;
+    width: 100vw;
+    display: inline-block;
+    animation: marquee2 10s linear infinite;
+    animation-delay: 5s;
+}
+  
+@keyframes marquee {
+    from {
+    transform: translateX(100%);
+    }
+    to {
+    transform: translateX(-100%);
+    }
+}
+  
+@keyframes marquee2 {
+    from {
+    transform: translateX(0%);
+    }
+    to {
+    transform: translateX(-200%);
+    }
+}
